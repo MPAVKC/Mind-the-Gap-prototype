@@ -26,10 +26,12 @@ package game
 			super.begin();
 			this.timer.start();
 			trace("LevelTwo class: Timer from level two has started...");
-			add(new Diamond(650, 100));
+			add(new Ticket(650, 495));
 			
-			add(new GameCoin(200, 400));
-			add(new GameCoin(400, 400));
+			add(new GameCoin(200, 500));
+			add(new GameCoin(300, 500));
+			add(new GameCoin(400, 500));
+			add(new GameCoin(500, 500));
 		}
 	}
 }

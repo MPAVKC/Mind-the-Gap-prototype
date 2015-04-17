@@ -26,7 +26,9 @@ package game
 			
 			this.timer.start();
 			trace("LevelTwo class: Timer from level three has started...");
-			add(new Treasure(700, 100));
+			add(new GameCoin(200, 470));
+			add(new GameCoin(400, 470));
+			add(new Ticket(650, 460));
 			
 		}
 		

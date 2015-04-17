@@ -31,7 +31,7 @@ package game
 			this.timer.start();
 			trace("LevelOne class: Timer from level one has started...");
 			
-			add(new Ticket(550, 100));
+			add(new Ticket(650, 495));
 			
 			question();
 		}
@@ -47,7 +47,7 @@ package game
 			choiceBQ = new CheckButton(150, 275, "Falconpunch", 250, 50, "B", choiceB);
 			add(choiceBQ);
 			
-			choiceCQ = new CheckButton(150, 325, "Sell mixtape", 250, 50, "C", choiceC);
+			choiceCQ = new CheckButton(150, 325, "It's not your fault", 250, 50, "C", choiceC);
 			add(choiceCQ);
 			
 		}

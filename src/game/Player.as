@@ -30,14 +30,14 @@ package game
 		}
 		override public function update():void
 		{
-			if (Input.check(Key.RIGHT) && x < 749) {x += 2;}
+			if (Input.check(Key.RIGHT) && x < 749) {x += 5;}
 			if (Input.pressed(Key.RIGHT)) {spr.play("walkright");}
 			if (Input.released(Key.RIGHT)) {spr.play("right");}
-			if (Input.check(Key.LEFT) && x > 0) {x -= 2;}
+			if (Input.check(Key.LEFT) && x > 0) {x -= 5;}
 			if (Input.pressed(Key.LEFT)) {spr.play("walkleft");}
 			if (Input.released(Key.LEFT)) {spr.play("left");}
-			if (Input.check(Key.UP) && y > 0) { y -= 2; }
-			if (Input.check(Key.DOWN) && y < 520) { y += 2; }
+			if (Input.check(Key.UP) && y > 0) { y -= 5; }
+			if (Input.check(Key.DOWN) && y < 520) { y += 5; }
 			
 			var coin:GameCoin = collide("coin", x, y) as GameCoin;
 			var endjourney:Treasure = collide("treasure", x, y) as Treasure;
